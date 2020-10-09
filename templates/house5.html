@@ -1,13 +1,43 @@
 {% extends "base.html" %}
 
-{% block title %}Houses{% endblock %}
+{% block title %}1865 Allandale Ave{% endblock %}
 
 {% block content %}
 <div class="container">
+  <div class="page-header">
+    <h1 style="text-align: center;">1865 Allandale Ave, East Cleveland, OH 44112</h1>
+  </div>
     {% block page_content %}
-    <ul>
-      {{raw_data}}
-    </ul>
+    <div class="row">
+      <div class='col-md-8'>
+        <div class="row">
+        <img src="../static/673-12-062_main_pic.JPG" width="600"
+        height="450" alt="1865 Allandale Ave">
+      </div>
+      <br/>
+          <div class="row">
+          <iframe
+            title='House 5'
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBiwBE4lFa_KcGXVcaYacSwFEYC2p_BLBs&q=1865+Allandale+Ave,+East+Cleveland,+OH" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <ul>
+          {{raw_data}}
+        </ul>
+      </div>
+    </div>
     {% endblock %}
+    {% block footer %}
+    <footer class="text-muted">
+      <div class="container">
+        <p style="color: black;">&copy; 2020 Stuart Kushner</p>
+      </div>
+    </footer>
+  {% endblock %}
 </div>
 {% endblock %}

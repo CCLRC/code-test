@@ -1,13 +1,43 @@
 {% extends "base.html" %}
 
-{% block title %}Houses{% endblock %}
+{% block title %}1637 Elberon Ave{% endblock %}
 
 {% block content %}
 <div class="container">
+  <div class="page-header">
+    <h1 style="text-align: center;">1637 Elberon Ave, East Cleveland, OH 44112</h1>
+  </div>
     {% block page_content %}
-    <ul>
-      {{raw_data}}
-    </ul>
+    <div class="row">
+      <div class='col-md-8'>
+        <div class="row">
+          <img src="../static/672-06-054_main_pic.JPG" width="600"
+          height="450" alt="1637 Elberon Ave">
+        </div>
+        <br/>
+          <div class='row'>
+          <iframe
+            title='House 4'
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=1637+Elberon+Ave,+East+Cleveland,+OH" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <ul>
+          {{raw_data}}
+        </ul>
+      </div>
+    </div>
     {% endblock %}
+    {% block footer %}
+    <footer class="text-muted">
+      <div class="container">
+        <p style="color: black;">&copy; 2020 Stuart Kushner</p>
+      </div>
+    </footer>
+  {% endblock %}
 </div>
 {% endblock %}
