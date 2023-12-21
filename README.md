@@ -15,10 +15,11 @@ http://neocando.case.edu/cando/housingReport/lbxml.jsp?parcel=672-06-054
 http://neocando.case.edu/cando/housingReport/lbxml.jsp?parcel=673-12-062
 ```
 
-Using Python and Flask, create a service that returns data from one of the
-example requests above when a URL is accessed.  Output data must be in JSON
-format.  For example, accessing http://localhost:8080/parcel would return
-JSON-format data descrbing a parcel.
+Using Python and Flask, create a service that returns data for a parcel
+when a URL is accessed using the parcel number in the query string.
+Output data must be in JSON format.
+For example, accessing http://localhost:8080/parcel_data?parcel=672-06-054
+would return JSON-format data descrbing parcel 672-06-054.
 
 ## Part 2: Front-End Presenation
 Building on the results from step 1, create a web page that takes the data from
