@@ -21,7 +21,7 @@ Output data must be in JSON format.
 For example, accessing http://localhost:8080/parcel_data?parcel=672-06-054
 would return JSON-format data descrbing parcel 672-06-054.
 
-## Part 2: Front-End Presenation
+## Part 2: Front-End Presentation
 Building on the results from step 1, create a web page that takes the data from
 Part 1 and displays all the information in a clear, readable manner.
 
@@ -69,8 +69,7 @@ the parcel with the ppn 812-12-027.
 2. Get the total cost of all inspections in East Cleveland. You can assume any
 address that ends in “East Cleveland, OH” is in East Cleveland. Note that
 inspections may include multiple parcels, but costs are per parcel.
-3. Get the address of all parcels that have not been inspected since January 1,
-2023.
+3. Get the address of all parcels that have not been inspected since January 1, 2023.
 
 
 ## Completion and Submission
